@@ -3,10 +3,11 @@
     {
       "type": "amazon-ebs",
       "region": "us-east-1",
-      "source_ami": "ami-de0d9eb7",
-      "instance_type": "t1.micro",
+      "source_ami": "ami-c30360aa",
+      "instance_type": "t1.small",
       "ssh_username": "ubuntu",
-      "ami_name": "docker-labs {{timestamp}}"
+      "ami_name": "docker-labs {{timestamp}}",
+      "security_group_id" : "sg-ab8b04c0"
     }
   ],
   "provisioners": [
