@@ -4,7 +4,7 @@
       "type": "amazon-ebs",
       "region": "us-east-1",
       "source_ami": "ami-c30360aa",
-      "instance_type": "t1.small",
+      "instance_type": "t1.micro",
       "ssh_username": "ubuntu",
       "ami_name": "docker-labs {{timestamp}}",
       "security_group_id" : "sg-ab8b04c0"
@@ -13,9 +13,7 @@
   "provisioners": [
       {
         "inline": [
-          "sudo apt-get update",
-          "apt-get install linux-virtual grub-legacy-ec2",
-          "sudo apt-get install linux-image-extra-`uname -r` -y",
+          "sudo apt-get install linux-image-extra-virtual -y",
           "sudo sh -c \"curl http://get.docker.io/gpg | apt-key add -\"",
           "sudo sh -c \"echo deb https://get.docker.io/ubuntu docker main > /etc/apt/sources.list.d/docker.list\"",
           "sudo apt-get update",
