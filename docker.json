@@ -20,7 +20,12 @@
           "sudo apt-get install lxc-docker -y",
           "sudo apt-get install libssl-dev build-essential libxslt-dev libxml2-dev -y",
           "sudo apt-get install git bzr mercurial subversion -y",
-          "echo -e '[user]\n\temail = pleasemailus@wercker.com\n\tname = wercker' > $HOME/.gitconfig"
+          "echo -e '[user]\n\temail = pleasemailus@wercker.com\n\tname = wercker' > $HOME/.gitconfig",
+          "sudo docker pull ubuntu",
+          "sudo docker pull base",
+          "sudo docker pull busybox",
+          "sudo docker pull centos",
+          "sudo docker pull schmidh/arch-base"
         ],
         "type": "shell"
       }
