@@ -13,15 +13,14 @@
   "provisioners": [
       {
         "inline": [
-          "sudo apt-get update",
-          "sudo apt-get install libssl-dev build-essential libxslt-dev libxml2-dev -y",
-          "sudo apt-get install git bzr mercurial subversion -y",
-          "echo -e '[user]\n\temail = pleasemailus@wercker.com\n\tname = wercker' > $HOME/.gitconfig",
           "sudo apt-get install linux-image-extra-virtual -y",
           "sudo sh -c \"curl http://get.docker.io/gpg | apt-key add -\"",
           "sudo sh -c \"echo deb https://get.docker.io/ubuntu docker main > /etc/apt/sources.list.d/docker.list\"",
           "sudo apt-get update",
-          "sudo apt-get install lxc-docker -y"
+          "sudo apt-get install lxc-docker -y",
+          "sudo apt-get install libssl-dev build-essential libxslt-dev libxml2-dev -y",
+          "sudo apt-get install git bzr mercurial subversion -y",
+          "echo -e '[user]\n\temail = pleasemailus@wercker.com\n\tname = wercker' > $HOME/.gitconfig"
         ],
         "type": "shell"
       }
