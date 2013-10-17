@@ -3,7 +3,7 @@
     {
       "type": "amazon-ebs",
       "region": "us-east-1",
-      "source_ami": "ami-c30360aa",
+      "source_ami": "ami-7f97d816",
       "instance_type": "t1.micro",
       "ssh_username": "ubuntu",
       "ami_name": "docker-labs {{timestamp}}",
@@ -20,7 +20,8 @@
           "sudo apt-get install lxc-docker -y",
           "sudo apt-get install libssl-dev build-essential libxslt-dev libxml2-dev -y",
           "sudo apt-get install git bzr mercurial subversion -y",
-          "echo -e '[user]\n\temail = pleasemailus@wercker.com\n\tname = wercker' > $HOME/.gitconfig",
+          "git config --global user.email \"pleasemailus@wercker.com\"",
+          "git config --global user.name \"wercker\"",
           "sudo docker pull ubuntu",
           "sudo docker pull base",
           "sudo docker pull busybox",
