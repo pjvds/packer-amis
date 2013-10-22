@@ -4,7 +4,7 @@
       "type": "amazon-ebs",
       "region": "us-east-1",
       "source_ami": "ami-7f97d816",
-      "instance_type": "t1.micro",
+      "instance_type": "m1.large",
       "ssh_username": "ubuntu",
       "ami_name": "docker-labs {{timestamp}}",
       "security_group_id" : "sg-ab8b04c0"
