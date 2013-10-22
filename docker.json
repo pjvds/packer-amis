@@ -13,7 +13,7 @@
   "provisioners": [
       {
         "inline": [
-          "sudo apt-get install linux-image-extra-virtual -y",
+          "sudo apt-get update",
           "sudo apt-get install libssl-dev build-essential libxslt-dev libxml2-dev -y",
           "sudo apt-get install git bzr mercurial subversion -y",
           "git config --global user.email \"pleasemailus@wercker.com\"",
