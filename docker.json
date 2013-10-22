@@ -20,7 +20,7 @@
           "git config --global user.name \"wercker\"",
           "sudo wget http://download.mono-project.com/sources/mono/mono-3.2.3.tar.bz2",
           "tar -xf mono-3.2.3.tar.bz2",
-          "(cd mono-3.2.3 ; ./configure --prefix=/usr/local; make; make install)",
+          "(cd mono-3.2.3 ; ./configure --prefix=/usr/local --with-profile2=no --with-profile4_5=no; make; make install)",
           "git clone https://github.com/mono/mono-tools.git",
           "(cd mono-tools ; ./configure --prefix=/usr/local; make; make install)"
         ],
