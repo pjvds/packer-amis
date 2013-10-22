@@ -14,7 +14,7 @@
       {
         "inline": [
           "sudo apt-get update",
-          "sudo apt-get install build-essential gettext libssl-dev libxslt1-dev libxml2-dev automake libtool libreadline-dev libglib2.0-dev gtk-sharp2 gnome-sharpi2 -y",
+          "sudo apt-get install build-essential gettext libssl-dev libxslt1-dev libxml2-dev automake libtool libreadline-dev libglib2.0-dev gtk-sharp2 gnome-sharp2 libwebkit-dev -y",
           "sudo apt-get install git bzr mercurial subversion -y",
           "git config --global user.email \"pleasemailus@wercker.com\"",
           "git config --global user.name \"wercker\"",
