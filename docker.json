@@ -26,7 +26,12 @@
           "sudo docker pull base",
           "sudo docker pull busybox",
           "sudo docker pull centos",
-          "sudo docker pull schmidh/arch-base"
+          "sudo docker pull schmidh/arch-base",
+          "sudo wget http://download.mono-project.com/sources/mono/mono-3.2.3.tar.bz2",
+          "tar -xf mono-3.2.3.tar.bz2",
+          "(cd mono-3.2.3 ; ./configure --prefix=/usr/local; make; make install)",
+          "git clone https://github.com/mono/mono-tools.git",
+          "(cd mono-tools ; ./configure --prefix=/usr/local; make; make install)"
         ],
         "type": "shell"
       }
