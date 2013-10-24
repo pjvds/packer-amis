@@ -23,16 +23,13 @@
           "git config --global user.email \"pleasemailus@wercker.com\"",
           "git config --global user.name \"wercker\"",
 
-          "git clone git://github.com/v8/v8.git v8",
-          "(cd v8 ; git checkout 3.17.11)",
-          "(cd v8 ; sudo make dependencies)",
-          "(cd v8 ; sudo make x64.release library=shared)",
-          "(sudo cp v8/c64.release/lib/target/* -t /usr/lib)",
-
           "sudo wget http://download.mono-project.com/sources/mono/mono-3.2.3.tar.bz2",
           "tar -xf mono-3.2.3.tar.bz2",
           "(cd mono-3.2.3 ; ./configure --prefix=/usr/local --with-profile2=no --with-profile4_5=no; sudo make; sudo make install)",
 
+          "git clone https://github.com/EventStore/EventStore.git",
+          "(cd EventStore ; ./build.sh full)",
+          
           "sudo apt-get install lxc-docker -y",
           "sudo apt-get install libssl-dev build-essential libxslt-dev libxml2-dev -y",
           "sudo apt-get install git bzr mercurial subversion -y",
